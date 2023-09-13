@@ -1,0 +1,104 @@
+/* 清除默认样式的代码 */
+/* 去除常见标签默认的 margin 和 padding */
+body,
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+header,
+menu,
+section,
+p,
+input,
+td,
+th,
+ins {
+  margin: 0;
+  padding: 0;
+}
+
+/* 设置网页统一的字体大小、行高、字体系列相关属性 */
+body {
+  /* font:font-size/line-height;设置数字，此数字会与当前的字体尺寸相乘来设置行间距。 */
+  font:
+    16px/1.5 'Helvetica Neue',
+    Helvetica,
+    Arial,
+    'Microsoft Yahei',
+    'Hiragino Sans GB',
+    'Heiti SC',
+    'WenQuanYi Micro Hei',
+    sans-serif;
+  color: #333;
+}
+
+/* css3盒模型 */
+* {
+  box-sizing: border-box;
+}
+
+/* 去除列表默认样式 */
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+/* 去除默认的倾斜效果 */
+em,
+i {
+  font-style: normal;
+}
+
+/* 去除a标签默认下划线，并设置默认文字颜色 */
+a {
+  color: #333;
+  text-decoration: none;
+}
+a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+/* 设置img的垂直对齐方式为居中对齐，去除img默认下间隙 */
+img {
+  border: none;
+  vertical-align: middle;
+}
+
+/* 去除input等标签的默认样式 */
+input,
+textarea,
+button,
+select,
+a {
+  border: none;
+  outline: none;
+  color: #333;
+}
+
+/* 省略 */
+.text-nowrap {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/* 双伪元素清除法 */
+.clearfix::before,
+.clearfix::after {
+  content: '';
+  display: table;
+}
+.clearfix::after {
+  clear: both;
+}
