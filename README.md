@@ -251,24 +251,12 @@ npx husky add .husky/commit-msg "npx --no-install commitlint --edit $1"
 
 ## 二. 接口文档
 
-接口文档v1版本：
+接口文档：（有部分更新）
 
-https://documenter.getpostman.com/view/12387168/TzsfmQvw
+https://documenter.getpostman.com/view/12387168/TzzDKb12
 
 baseURL的值：
 
 ```
-http://152.136.185.210:5000
-http://152.136.185.210:4000
+'http://123.207.32.32:5000'
 ```
-
-设置全局token的方法：
-
-```js
-const res = pm.response.json()
-pm.globals.set('token', res.data.token)
-```
-
-接口文档v2版本：（有部分更新）
-
-https://documenter.getpostman.com/view/12387168/TzzDKb12
